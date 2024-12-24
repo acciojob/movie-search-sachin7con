@@ -1,0 +1,4 @@
+{
+    "testRepo": "movie-search-solution",
+    "pathToFile": "cypress/integration/tests/test.spec.js"
+}
