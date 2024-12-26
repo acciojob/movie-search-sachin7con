@@ -12,13 +12,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.7.9",
     "css-loader": "^4.3.0",
+    "cypress": "^9.5.0",
     "jest-junit": "^11.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^6.28.1",
+    "regenerator-runtime": "^0.14.1",
     "style-loader": "^1.2.1",
-    "webpack-cli": "^3.3.12",
-    "cypress": "^9.5.0"
+    "webpack-cli": "^3.3.12"
   },
   "jest": {
     "moduleNameMapper": {
@@ -48,7 +51,7 @@
     "jest": "^26.4.2",
     "react-test-renderer": "^16.13.1",
     "webpack": "^4.44.2",
-    "webpack-dev-server": "^3.11.0",
+    "webpack-dev-server": "^3.11.3",
     "xml-js": "^1.6.11"
   }
 }
