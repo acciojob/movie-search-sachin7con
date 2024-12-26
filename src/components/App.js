@@ -52,6 +52,7 @@ const ItemList = () => {
 
   return (
     <div className="container">
+      <form>
       <label>
         Search Movies <br />
         <input
@@ -63,12 +64,14 @@ const ItemList = () => {
         />
       </label>
       <button onClick={handleSearch}>Search</button>
-
+      </form>
       {errorMessage && <div className="error">{errorMessage}</div>}
 
       <div className="movie-result">
+        <ul>
         {movies && movies.length > 0 ? (
           movies.map((movie) => (
+            <li>
             <div key={movie.imdbID} className="movie-item">
               <Link to={`/movie/${movie.imdbID}`}>
                 <p>{movie.Title}</p>
@@ -76,10 +79,12 @@ const ItemList = () => {
                 <img src={movie.Poster} alt={`${movie.Title} Poster`} />
               </Link>
             </div>
+            </li>
           ))
         ) : (
           <p>No movies found</p>
         )}
+        </ul>
       </div>
     </div>
   );
