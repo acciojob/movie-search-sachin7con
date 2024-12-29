@@ -74,8 +74,7 @@ const ItemList = () => {
             <li>
             <div key={movie.imdbID} className="movie-item">
               <Link to={`/movie/${movie.imdbID}`}>
-                <p>{movie.Title}</p>
-                <p>{movie.Year}</p>
+                <p>{movie.Title} {movie.Year}</p>
                 <img src={movie.Poster} alt={`${movie.Title} Poster`} />
               </Link>
             </div>
